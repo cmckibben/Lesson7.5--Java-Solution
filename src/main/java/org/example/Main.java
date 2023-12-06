@@ -125,7 +125,7 @@ class Main {
         String fileName = "runtimes.csv";
         try (FileWriter writer = new FileWriter(fileName);
              BufferedWriter csv = new BufferedWriter(writer)) {
-            csv.append("\"Run\",\"Linear Search Sorted\",\"Linear Search Unsorted\",\"Binary Search Sorted\"\n");
+            csv.append("\"Run\",\"Java Linear Search Sorted\",\"Java Linear Search Unsorted\",\"Java Binary Search Sorted\"\n");
             for (int i = 0; i < runs; i++) {
                 csv.append(String.valueOf(i)).append(",");
                 csv.append(String.valueOf(linearSearchRunTimesSorted.get(i))).append(",");
